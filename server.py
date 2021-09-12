@@ -2,7 +2,7 @@ from sanic import Sanic, text
 from sanic.log import logger
 
 app = Sanic(__name__)
-app.config.REAL_IP_HEADER = "x-real-ip"
+app.config.REAL_IP_HEADER = "do-connecting-ip"
 
 
 @app.get("/")
